@@ -11,6 +11,13 @@
 		B5B5E5D22A114772009BA416 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5E5D12A114772009BA416 /* ContentView.swift */; };
 		B5B5E5D42A114773009BA416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B5E5D32A114773009BA416 /* Assets.xcassets */; };
 		B5B5E5D82A114773009BA416 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5B5E5D72A114773009BA416 /* Preview Assets.xcassets */; };
+		B5B5E5E02A1147A6009BA416 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = B5B5E5DF2A1147A6009BA416 /* AudioKit */; };
+		B5B5E5E32A1147C2009BA416 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = B5B5E5E22A1147C2009BA416 /* ComposableArchitecture */; };
+		B5B5E5E62A1147DA009BA416 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5E5E52A1147DA009BA416 /* Song.swift */; };
+		B5B5E5EC2A114804009BA416 /* SongToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5E5E92A114803009BA416 /* SongToolbarView.swift */; };
+		B5B5E5ED2A114804009BA416 /* SongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5E5EA2A114804009BA416 /* SongView.swift */; };
+		B5B5E5EE2A114804009BA416 /* InstrumentTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B5E5EB2A114804009BA416 /* InstrumentTrackView.swift */; };
+		B5B5E5F82A114AFA009BA416 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = B5B5E5F72A114AF9009BA416 /* Files */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,11 @@
 		B5B5E5D32A114773009BA416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5B5E5D52A114773009BA416 /* Multi_Track_Load_Instrument_Bug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Multi_Track_Load_Instrument_Bug.entitlements; sourceTree = "<group>"; };
 		B5B5E5D72A114773009BA416 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5B5E5E52A1147DA009BA416 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		B5B5E5E92A114803009BA416 /* SongToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongToolbarView.swift; sourceTree = "<group>"; };
+		B5B5E5EA2A114804009BA416 /* SongView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SongView.swift; path = "../../../../midicircuit-macos/MidicircuitCore/Sources/CorePlayground/SongView/SongView.swift"; sourceTree = "<group>"; };
+		B5B5E5EB2A114804009BA416 /* InstrumentTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentTrackView.swift; sourceTree = "<group>"; };
+		B5B5E5F72A114AF9009BA416 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Files; path = "Multi Track Load Instrument Bug/Files"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B5E5E32A1147C2009BA416 /* ComposableArchitecture in Frameworks */,
+				B5B5E5E02A1147A6009BA416 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +50,7 @@
 		B5B5E5C32A114772009BA416 = {
 			isa = PBXGroup;
 			children = (
+				B5B5E5F72A114AF9009BA416 /* Files */,
 				B5B5E5CE2A114772009BA416 /* Multi Track Load Instrument Bug */,
 				B5B5E5CD2A114772009BA416 /* Products */,
 			);
@@ -52,6 +67,7 @@
 		B5B5E5CE2A114772009BA416 /* Multi Track Load Instrument Bug */ = {
 			isa = PBXGroup;
 			children = (
+				B5B5E5E42A1147D1009BA416 /* Song */,
 				B5B5E5CF2A114772009BA416 /* Multi_Track_Load_Instrument_BugApp.swift */,
 				B5B5E5D12A114772009BA416 /* ContentView.swift */,
 				B5B5E5D32A114773009BA416 /* Assets.xcassets */,
@@ -67,6 +83,17 @@
 				B5B5E5D72A114773009BA416 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5B5E5E42A1147D1009BA416 /* Song */ = {
+			isa = PBXGroup;
+			children = (
+				B5B5E5EB2A114804009BA416 /* InstrumentTrackView.swift */,
+				B5B5E5E92A114803009BA416 /* SongToolbarView.swift */,
+				B5B5E5EA2A114804009BA416 /* SongView.swift */,
+				B5B5E5E52A1147DA009BA416 /* Song.swift */,
+			);
+			path = Song;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +112,10 @@
 			dependencies = (
 			);
 			name = "Multi Track Load Instrument Bug";
+			packageProductDependencies = (
+				B5B5E5DF2A1147A6009BA416 /* AudioKit */,
+				B5B5E5E22A1147C2009BA416 /* ComposableArchitecture */,
+			);
 			productName = "Multi Track Load Instrument Bug";
 			productReference = B5B5E5CC2A114772009BA416 /* Multi Track Load Instrument Bug.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +144,10 @@
 				Base,
 			);
 			mainGroup = B5B5E5C32A114772009BA416;
+			packageReferences = (
+				B5B5E5DE2A1147A6009BA416 /* XCRemoteSwiftPackageReference "AudioKit" */,
+				B5B5E5E12A1147C2009BA416 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = B5B5E5CD2A114772009BA416 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B5E5F82A114AFA009BA416 /* Files in Resources */,
 				B5B5E5D82A114773009BA416 /* Preview Assets.xcassets in Resources */,
 				B5B5E5D42A114773009BA416 /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B5E5E62A1147DA009BA416 /* Song.swift in Sources */,
+				B5B5E5EE2A114804009BA416 /* InstrumentTrackView.swift in Sources */,
 				B5B5E5D22A114772009BA416 /* ContentView.swift in Sources */,
 				B5B5E5D02A114772009BA416 /* Multi_Track_Load_Instrument_BugApp.swift in Sources */,
+				B5B5E5ED2A114804009BA416 /* SongView.swift in Sources */,
+				B5B5E5EC2A114804009BA416 /* SongToolbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +394,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5B5E5DE2A1147A6009BA416 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		B5B5E5E12A1147C2009BA416 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5B5E5DF2A1147A6009BA416 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B5E5DE2A1147A6009BA416 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+		B5B5E5E22A1147C2009BA416 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5B5E5E12A1147C2009BA416 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5B5E5C42A114772009BA416 /* Project object */;
 }
